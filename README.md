@@ -11,6 +11,14 @@ as well.
 If you compile Nginx from source make sure you provide the
 `--with-http_ssl_module` flag, otherwise the SSL tests will fail.
 
+These tests currently use a single Nginx worker thread via the
+`worker_processes 1;` directive. Running them again with 2 workers would yield
+faster Nginx performance at a trade-off of more memory usage.
+
+The HTTP benchmarks used for the article are done with the
+[siege](https://github.com/JoeDog/siege) tool, though any HTTP benchmarking
+tool should work fine.
+
 The following sections contain instruction for recreating each of the benchmark
 results:
 
