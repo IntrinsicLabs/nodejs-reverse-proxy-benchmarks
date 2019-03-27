@@ -1,0 +1,11 @@
+node_modules
+
+ssl.crt
+ssl.key
+
+client_body_temp
+fastcgi_temp
+logs
+proxy_temp
+scgi_temp
+uwsgi_temp
